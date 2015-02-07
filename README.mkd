@@ -1,0 +1,27 @@
+IA State Pipeline
+-----------------
+Eric T Dawson  
+Texas Advanced Computing Center
+
+## Running initially
+Untar the bin tarball, make sure your data and BWA index files are in
+the right place, and submit either the iastate.sh for serial or parallel_iastate.sh
+scripts to run.
+
+
+## Trying different software versions
+Untar the build directory and cd into it.
+Run either of the build scripts like so:
+
+```./build_prog.sh <Version>```
+
+
+where version is the name of the desired top-level directory in the src dir.
+For example, to build samtools 1.1, type:
+```./build_samtools.sh samtools-1.1```
+
+Make sure that you use a valid directory name. You will have to manually make clean if you want
+to reinstall a specific version.
+
+
+HINT: You'll have to untar the src directory to build anything.

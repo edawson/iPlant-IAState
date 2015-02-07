@@ -1,0 +1,434 @@
+
+Program: bwa (alignment via Burrows-Wheeler transformation)
+Version: 0.7.12-r1039
+Contact: Heng Li <lh3@sanger.ac.uk>
+
+Usage:   bwa <command> [options]
+
+Command: index         index sequences in the FASTA format
+         mem           BWA-MEM algorithm
+         fastmap       identify super-maximal exact matches
+         pemerge       merge overlapping paired ends (EXPERIMENTAL)
+         aln           gapped/ungapped alignment
+         samse         generate alignment (single ended)
+         sampe         generate alignment (paired ended)
+         bwasw         BWA-SW for long queries
+
+         shm           manage indices in shared memory
+         fa2pac        convert FASTA to PAC format
+         pac2bwt       generate BWT from PAC
+         pac2bwtgen    alternative algorithm for generating BWT
+         bwtupdate     update .bwt to the new format
+         bwt2sa        generate SA from BWT and Occ
+
+Note: To use BWA, you need to first index the genome with `bwa index'.
+      There are three alignment algorithms in BWA: `mem', `bwasw', and
+      `aln/samse/sampe'. If you are not sure which to use, try `bwa mem'
+      first. Please `man ./bwa.1' for the manual.
+
+
+Program: samtools (Tools for alignments in the SAM format)
+Version: 1.1 (using htslib 1.1)
+
+Usage:   samtools <command> [options]
+
+Commands:
+  -- indexing
+         faidx       index/extract FASTA
+         index       index alignment
+  -- editing
+         calmd       recalculate MD/NM tags and '=' bases
+         fixmate     fix mate information
+         reheader    replace BAM header
+         rmdup       remove PCR duplicates
+         targetcut   cut fosmid regions (for fosmid pool only)
+  -- file operations
+         bamshuf     shuffle and group alignments by name
+         cat         concatenate BAMs
+         merge       merge sorted alignments
+         mpileup     multi-way pileup
+         sort        sort alignment file
+         split       splits a file by read group
+         bam2fq      converts a BAM to a FASTQ
+  -- stats
+         bedcov      read depth per BED region
+         depth       compute the depth
+         flagstat    simple stats
+         idxstats    BAM index stats
+         phase       phase heterozygotes
+         stats       generate stats (former bamcheck)
+  -- viewing
+         flags       explain BAM flags
+         tview       text alignment viewer
+         view        SAM<->BAM<->CRAM conversion
+
+Creating input1
+Creating input2
+Creating temp
+Thu Feb  5 00:00:41 CST 2015
+WHWT.86391.AP.03.1_Unique.fastq was not compressed
+WHWT.86391.AP.03.2_Unique.fastq was not compressed
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:8, id:8
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:12, id:12
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:4, id:4
+first node in pool: h:c454-002.stampede.tacc.utexas.edu, c:0, id:0
+
+==========================
+Launcherjob run completed.
+
+total running time: 1548.18
+
+# tasks completed: 117
+max runningtime:  78.24
+avg runningtime:  52.36
+
+
+
+Host pool of size 16.
+
+Number of tasks executed per node:
+max: 30
+avg: 29
+
+==========================
+
+[Thu Feb 05 00:37:23 CST 2015] net.sf.picard.sam.AddOrReplaceReadGroups INPUT=WHWT.86391.AP.03.mem.00_00_41.sorted.bam OUTPUT=WHWT.86391.AP.03.mem.00_00_41.fixed.bam RGLB=1 RGPL=illumina RGPU=all RGSM=WHWT.86391.AP.03 VALIDATION_STRINGENCY=SILENT    RGID=1 VERBOSITY=INFO QUIET=false COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false
+[Thu Feb 05 00:37:23 CST 2015] Executing as ericd92@c454-002.stampede.tacc.utexas.edu on Linux 2.6.32-431.17.1.el6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 1.7.0_71-b14; Picard version: 1.83(1319)
+INFO	2015-02-05 00:37:24	AddOrReplaceReadGroups	Created read group ID=1 PL=illumina LB=1 SM=WHWT.86391.AP.03
+
+INFO	2015-02-05 00:37:41	AddOrReplaceReadGroups	Processed     1,000,000 records.  Elapsed time: 00:00:16s.  Time for last 1,000,000:   16s.  Last read position: Chr3:29,604,546
+INFO	2015-02-05 00:37:57	AddOrReplaceReadGroups	Processed     2,000,000 records.  Elapsed time: 00:00:33s.  Time for last 1,000,000:   16s.  Last read position: Chr5:116,534,798
+INFO	2015-02-05 00:38:13	AddOrReplaceReadGroups	Processed     3,000,000 records.  Elapsed time: 00:00:49s.  Time for last 1,000,000:   16s.  Last read position: Chr8:104,003,395
+INFO	2015-02-05 00:38:30	AddOrReplaceReadGroups	Processed     4,000,000 records.  Elapsed time: 00:01:06s.  Time for last 1,000,000:   16s.  Last read position: Chr11:99,644,463
+INFO	2015-02-05 00:38:46	AddOrReplaceReadGroups	Processed     5,000,000 records.  Elapsed time: 00:01:22s.  Time for last 1,000,000:   16s.  Last read position: Chr16:12,360,057
+INFO	2015-02-05 00:39:03	AddOrReplaceReadGroups	Processed     6,000,000 records.  Elapsed time: 00:01:38s.  Time for last 1,000,000:   16s.  Last read position: Chr20:72,038,014
+INFO	2015-02-05 00:39:19	AddOrReplaceReadGroups	Processed     7,000,000 records.  Elapsed time: 00:01:55s.  Time for last 1,000,000:   16s.  Last read position: Chr27:24,398,502
+INFO	2015-02-05 00:39:35	AddOrReplaceReadGroups	Processed     8,000,000 records.  Elapsed time: 00:02:11s.  Time for last 1,000,000:   16s.  Last read position: ChrX:129,412,426
+INFO	2015-02-05 00:39:48	AddOrReplaceReadGroups	Processed     9,000,000 records.  Elapsed time: 00:02:24s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:40:02	AddOrReplaceReadGroups	Processed    10,000,000 records.  Elapsed time: 00:02:37s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:40:15	AddOrReplaceReadGroups	Processed    11,000,000 records.  Elapsed time: 00:02:50s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:40:28	AddOrReplaceReadGroups	Processed    12,000,000 records.  Elapsed time: 00:03:03s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:40:41	AddOrReplaceReadGroups	Processed    13,000,000 records.  Elapsed time: 00:03:16s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:40:54	AddOrReplaceReadGroups	Processed    14,000,000 records.  Elapsed time: 00:03:29s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:41:07	AddOrReplaceReadGroups	Processed    15,000,000 records.  Elapsed time: 00:03:43s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:41:20	AddOrReplaceReadGroups	Processed    16,000,000 records.  Elapsed time: 00:03:56s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:41:33	AddOrReplaceReadGroups	Processed    17,000,000 records.  Elapsed time: 00:04:09s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:41:46	AddOrReplaceReadGroups	Processed    18,000,000 records.  Elapsed time: 00:04:22s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:41:59	AddOrReplaceReadGroups	Processed    19,000,000 records.  Elapsed time: 00:04:35s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:42:12	AddOrReplaceReadGroups	Processed    20,000,000 records.  Elapsed time: 00:04:48s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:42:26	AddOrReplaceReadGroups	Processed    21,000,000 records.  Elapsed time: 00:05:02s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:42:39	AddOrReplaceReadGroups	Processed    22,000,000 records.  Elapsed time: 00:05:15s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:42:53	AddOrReplaceReadGroups	Processed    23,000,000 records.  Elapsed time: 00:05:28s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:43:06	AddOrReplaceReadGroups	Processed    24,000,000 records.  Elapsed time: 00:05:42s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:43:19	AddOrReplaceReadGroups	Processed    25,000,000 records.  Elapsed time: 00:05:55s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:43:33	AddOrReplaceReadGroups	Processed    26,000,000 records.  Elapsed time: 00:06:08s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:43:46	AddOrReplaceReadGroups	Processed    27,000,000 records.  Elapsed time: 00:06:21s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:43:58	AddOrReplaceReadGroups	Processed    28,000,000 records.  Elapsed time: 00:06:34s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:44:11	AddOrReplaceReadGroups	Processed    29,000,000 records.  Elapsed time: 00:06:47s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:44:24	AddOrReplaceReadGroups	Processed    30,000,000 records.  Elapsed time: 00:06:59s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:44:36	AddOrReplaceReadGroups	Processed    31,000,000 records.  Elapsed time: 00:07:12s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:44:49	AddOrReplaceReadGroups	Processed    32,000,000 records.  Elapsed time: 00:07:25s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:45:02	AddOrReplaceReadGroups	Processed    33,000,000 records.  Elapsed time: 00:07:38s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:45:15	AddOrReplaceReadGroups	Processed    34,000,000 records.  Elapsed time: 00:07:51s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:45:28	AddOrReplaceReadGroups	Processed    35,000,000 records.  Elapsed time: 00:08:04s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:45:41	AddOrReplaceReadGroups	Processed    36,000,000 records.  Elapsed time: 00:08:17s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:45:54	AddOrReplaceReadGroups	Processed    37,000,000 records.  Elapsed time: 00:08:29s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:46:07	AddOrReplaceReadGroups	Processed    38,000,000 records.  Elapsed time: 00:08:42s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:46:19	AddOrReplaceReadGroups	Processed    39,000,000 records.  Elapsed time: 00:08:55s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:46:32	AddOrReplaceReadGroups	Processed    40,000,000 records.  Elapsed time: 00:09:08s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:46:45	AddOrReplaceReadGroups	Processed    41,000,000 records.  Elapsed time: 00:09:21s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:46:58	AddOrReplaceReadGroups	Processed    42,000,000 records.  Elapsed time: 00:09:34s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:47:11	AddOrReplaceReadGroups	Processed    43,000,000 records.  Elapsed time: 00:09:47s.  Time for last 1,000,000:   12s.  Last read position: */*
+INFO	2015-02-05 00:47:24	AddOrReplaceReadGroups	Processed    44,000,000 records.  Elapsed time: 00:10:00s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:47:37	AddOrReplaceReadGroups	Processed    45,000,000 records.  Elapsed time: 00:10:13s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:47:51	AddOrReplaceReadGroups	Processed    46,000,000 records.  Elapsed time: 00:10:26s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:48:04	AddOrReplaceReadGroups	Processed    47,000,000 records.  Elapsed time: 00:10:40s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:48:17	AddOrReplaceReadGroups	Processed    48,000,000 records.  Elapsed time: 00:10:53s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:48:30	AddOrReplaceReadGroups	Processed    49,000,000 records.  Elapsed time: 00:11:06s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:48:43	AddOrReplaceReadGroups	Processed    50,000,000 records.  Elapsed time: 00:11:19s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:48:56	AddOrReplaceReadGroups	Processed    51,000,000 records.  Elapsed time: 00:11:32s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:49:09	AddOrReplaceReadGroups	Processed    52,000,000 records.  Elapsed time: 00:11:45s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:49:22	AddOrReplaceReadGroups	Processed    53,000,000 records.  Elapsed time: 00:11:58s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:49:36	AddOrReplaceReadGroups	Processed    54,000,000 records.  Elapsed time: 00:12:11s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:49:49	AddOrReplaceReadGroups	Processed    55,000,000 records.  Elapsed time: 00:12:24s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:50:02	AddOrReplaceReadGroups	Processed    56,000,000 records.  Elapsed time: 00:12:38s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:50:15	AddOrReplaceReadGroups	Processed    57,000,000 records.  Elapsed time: 00:12:51s.  Time for last 1,000,000:   13s.  Last read position: */*
+INFO	2015-02-05 00:50:28	AddOrReplaceReadGroups	Processed    58,000,000 records.  Elapsed time: 00:13:04s.  Time for last 1,000,000:   13s.  Last read position: */*
+[Thu Feb 05 00:50:39 CST 2015] net.sf.picard.sam.AddOrReplaceReadGroups done. Elapsed time: 13.27 minutes.
+Runtime.totalMemory()=392691712
+INFO  00:51:26,652 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  00:51:26,655 HelpFormatter - The Genome Analysis Toolkit (GATK) v2.7-2-g6bda569, Compiled 2013/08/28 16:30:29 
+INFO  00:51:26,655 HelpFormatter - Copyright (c) 2010 The Broad Institute 
+INFO  00:51:26,655 HelpFormatter - For support and documentation go to http://www.broadinstitute.org/gatk 
+INFO  00:51:26,658 HelpFormatter - Program Args: -R UMD31.fasta -T UnifiedGenotyper -nct 16 -I WHWT.86391.AP.03.mem.00_00_41.fixed.bam -o WHWT.86391.AP.03.mem.00_00_41.vcf -dt NONE -allowPotentiallyMisencodedQuals 
+INFO  00:51:26,659 HelpFormatter - Date/Time: 2015/02/05 00:51:26 
+INFO  00:51:26,659 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  00:51:26,659 HelpFormatter - -------------------------------------------------------------------------------- 
+INFO  00:51:28,807 GenomeAnalysisEngine - Strictness is SILENT 
+INFO  00:51:29,182 GenomeAnalysisEngine - Downsampling Settings: No downsampling 
+INFO  00:51:29,189 SAMDataSource$SAMReaders - Initializing SAMRecords in serial 
+INFO  00:51:29,272 SAMDataSource$SAMReaders - Done initializing BAM readers: total time 0.08 
+INFO  00:51:29,326 MicroScheduler - Running the GATK in parallel mode with 16 total threads, 16 CPU thread(s) for each of 1 data thread(s), of 16 processors available on this machine 
+INFO  00:51:29,460 GenomeAnalysisEngine - Preparing for traversal over 1 BAM files 
+INFO  00:51:29,813 GenomeAnalysisEngine - Done preparing for traversal 
+INFO  00:51:29,813 ProgressMeter - [INITIALIZATION COMPLETE; STARTING PROCESSING] 
+INFO  00:51:29,814 ProgressMeter -        Location processed.sites  runtime per.1M.sites completed total.runtime remaining 
+INFO  00:51:59,817 ProgressMeter -   Chr1:17555565        1.75e+07   30.0 s        1.0 s      0.7%        76.1 m    75.6 m 
+INFO  00:52:29,818 ProgressMeter -   Chr1:35630413        3.55e+07   60.0 s        1.0 s      1.3%        75.0 m    74.0 m 
+INFO  00:53:09,819 ProgressMeter -   Chr1:60030893        6.00e+07  100.0 s        1.0 s      2.2%        74.2 m    72.5 m 
+INFO  00:53:49,820 ProgressMeter -   Chr1:84016765        8.39e+07    2.3 m        1.0 s      3.1%        74.2 m    71.8 m 
+INFO  00:54:19,821 ProgressMeter -  Chr1:102138457        1.02e+08    2.8 m        1.0 s      3.8%        74.1 m    71.3 m 
+INFO  00:54:49,821 ProgressMeter -  Chr1:120060969        1.20e+08    3.3 m        1.0 s      4.5%        74.2 m    70.8 m 
+INFO  00:55:19,822 ProgressMeter -  Chr1:138188589        1.38e+08    3.8 m        1.0 s      5.2%        74.1 m    70.3 m 
+INFO  00:55:59,822 ProgressMeter -    Chr2:4549349        1.63e+08    4.5 m        1.0 s      6.1%        73.8 m    69.3 m 
+INFO  00:56:29,823 ProgressMeter -   Chr2:22683657        1.81e+08    5.0 m        1.0 s      6.8%        73.8 m    68.8 m 
+INFO  00:56:59,824 ProgressMeter -   Chr2:40292705        1.99e+08    5.5 m        1.0 s      7.4%        74.0 m    68.5 m 
+INFO  00:57:39,824 ProgressMeter -   Chr2:64204113        2.23e+08    6.2 m        1.0 s      8.3%        74.0 m    67.9 m 
+INFO  00:58:09,825 ProgressMeter -   Chr2:82802953        2.41e+08    6.7 m        1.0 s      9.0%        73.8 m    67.2 m 
+INFO  00:58:39,826 ProgressMeter -  Chr2:100664729        2.59e+08    7.2 m        1.0 s      9.7%        73.9 m    66.7 m 
+INFO  00:59:19,827 ProgressMeter -  Chr2:125251197        2.84e+08    7.8 m        1.0 s     10.6%        73.8 m    65.9 m 
+INFO  00:59:49,827 ProgressMeter -    Chr3:6521333        3.02e+08    8.3 m        1.0 s     11.3%        73.7 m    65.4 m 
+INFO  01:00:19,828 ProgressMeter -   Chr3:25110989        3.20e+08    8.8 m        1.0 s     12.0%        73.6 m    64.8 m 
+INFO  01:00:59,829 ProgressMeter -   Chr3:49230737        3.45e+08    9.5 m        1.0 s     12.9%        73.6 m    64.1 m 
+INFO  01:01:29,829 ProgressMeter -   Chr3:67163017        3.63e+08   10.0 m        1.0 s     13.6%        73.7 m    63.7 m 
+INFO  01:01:59,830 ProgressMeter -   Chr3:85324089        3.81e+08   10.5 m        1.0 s     14.3%        73.7 m    63.2 m 
+INFO  01:02:39,831 ProgressMeter -  Chr3:109449221        4.05e+08   11.2 m        1.0 s     15.2%        73.7 m    62.5 m 
+INFO  01:03:19,831 ProgressMeter -   Chr4:12731185        4.30e+08   11.8 m        1.0 s     16.1%        73.6 m    61.7 m 
+INFO  01:03:49,832 ProgressMeter -   Chr4:30565977        4.47e+08   12.3 m        1.0 s     16.7%        73.6 m    61.3 m 
+INFO  01:04:29,833 ProgressMeter -   Chr4:54531653        4.71e+08   13.0 m        1.0 s     17.6%        73.7 m    60.7 m 
+INFO  01:05:09,833 ProgressMeter -   Chr4:78742301        4.95e+08   13.7 m        1.0 s     18.6%        73.7 m    60.0 m 
+INFO  01:05:39,834 ProgressMeter -   Chr4:97049233        5.14e+08   14.2 m        1.0 s     19.2%        73.6 m    59.5 m 
+INFO  01:06:09,835 ProgressMeter -  Chr4:115714709        5.33e+08   14.7 m        1.0 s     19.9%        73.6 m    58.9 m 
+INFO  01:06:49,835 ProgressMeter -   Chr5:19854225        5.57e+08   15.3 m        1.0 s     20.9%        73.5 m    58.1 m 
+INFO  01:07:19,836 ProgressMeter -   Chr5:37854941        5.76e+08   15.8 m        1.0 s     21.5%        73.5 m    57.7 m 
+INFO  01:07:49,837 ProgressMeter -   Chr5:56138917        5.94e+08   16.3 m        1.0 s     22.2%        73.5 m    57.1 m 
+INFO  01:08:29,838 ProgressMeter -   Chr5:80161029        6.18e+08   17.0 m        1.0 s     23.1%        73.5 m    56.5 m 
+INFO  01:08:59,838 ProgressMeter -   Chr5:98100909        6.36e+08   17.5 m        1.0 s     23.8%        73.5 m    56.0 m 
+INFO  01:09:29,839 ProgressMeter -  Chr5:116870773        6.55e+08   18.0 m        1.0 s     24.5%        73.5 m    55.5 m 
+INFO  01:10:09,840 ProgressMeter -   Chr6:20565521        6.79e+08   18.7 m        1.0 s     25.4%        73.4 m    54.7 m 
+INFO  01:10:39,840 ProgressMeter -   Chr6:39019005        6.98e+08   19.2 m        1.0 s     26.1%        73.4 m    54.2 m 
+INFO  01:11:09,841 ProgressMeter -   Chr6:57438321        7.16e+08   19.7 m        1.0 s     26.8%        73.3 m    53.7 m 
+INFO  01:11:49,842 ProgressMeter -   Chr6:81980601        7.41e+08   20.3 m        1.0 s     27.7%        73.3 m    53.0 m 
+INFO  01:12:19,842 ProgressMeter -  Chr6:100184909        7.59e+08   20.8 m        1.0 s     28.4%        73.3 m    52.5 m 
+INFO  01:12:49,843 ProgressMeter -  Chr6:118665729        7.78e+08   21.3 m        1.0 s     29.1%        73.3 m    52.0 m 
+INFO  01:13:19,844 ProgressMeter -   Chr7:18202541        7.96e+08   21.8 m        1.0 s     29.8%        73.2 m    51.4 m 
+INFO  01:13:59,846 ProgressMeter -   Chr7:42501797        8.21e+08   22.5 m        1.0 s     30.7%        73.2 m    50.7 m 
+INFO  01:14:39,846 ProgressMeter -   Chr7:66860321        8.45e+08   23.2 m        1.0 s     31.6%        73.2 m    50.1 m 
+INFO  01:15:09,847 ProgressMeter -   Chr7:84476769        8.63e+08   23.7 m        1.0 s     32.3%        73.3 m    49.6 m 
+INFO  01:15:39,848 ProgressMeter -  Chr7:102125789        8.80e+08   24.2 m        1.0 s     33.0%        73.3 m    49.2 m 
+INFO  01:16:19,848 ProgressMeter -   Chr8:14359085        9.05e+08   24.8 m        1.0 s     33.9%        73.3 m    48.4 m 
+INFO  01:16:49,849 ProgressMeter -   Chr8:32422353        9.23e+08   25.3 m        1.0 s     34.6%        73.3 m    48.0 m 
+INFO  01:17:19,850 ProgressMeter -   Chr8:50724865        9.42e+08   25.8 m        1.0 s     35.3%        73.3 m    47.4 m 
+INFO  01:17:59,850 ProgressMeter -   Chr8:74804065        9.65e+08   26.5 m        1.0 s     36.2%        73.3 m    46.8 m 
+INFO  01:18:29,851 ProgressMeter -   Chr8:93232961        9.84e+08   27.0 m        1.0 s     36.8%        73.3 m    46.3 m 
+INFO  01:18:59,852 ProgressMeter -  Chr8:111505521        1.00e+09   27.5 m        1.0 s     37.5%        73.3 m    45.8 m 
+INFO  01:19:39,852 ProgressMeter -   Chr9:22917933        1.03e+09   28.2 m        1.0 s     38.5%        73.2 m    45.1 m 
+INFO  01:20:09,853 ProgressMeter -   Chr9:41084489        1.05e+09   28.7 m        1.0 s     39.1%        73.2 m    44.6 m 
+INFO  01:20:39,854 ProgressMeter -   Chr9:58860529        1.06e+09   29.2 m        1.0 s     39.8%        73.3 m    44.1 m 
+INFO  01:21:19,855 ProgressMeter -   Chr9:82837221        1.09e+09   29.8 m        1.0 s     40.7%        73.3 m    43.5 m 
+INFO  01:21:49,855 ProgressMeter -  Chr9:101130313        1.11e+09   30.3 m        1.0 s     41.4%        73.3 m    43.0 m 
+INFO  01:22:19,856 ProgressMeter -  Chr10:14049789        1.12e+09   30.8 m        1.0 s     42.1%        73.3 m    42.4 m 
+INFO  01:22:59,857 ProgressMeter -  Chr10:38226753        1.15e+09   31.5 m        1.0 s     43.0%        73.3 m    41.8 m 
+INFO  01:23:29,857 ProgressMeter -  Chr10:56255989        1.17e+09   32.0 m        1.0 s     43.7%        73.3 m    41.3 m 
+INFO  01:23:59,859 ProgressMeter -  Chr10:73977361        1.18e+09   32.5 m        1.0 s     44.3%        73.3 m    40.8 m 
+INFO  01:24:39,860 ProgressMeter -  Chr10:98197813        1.21e+09   33.2 m        1.0 s     45.2%        73.3 m    40.2 m 
+INFO  01:25:19,860 ProgressMeter -  Chr11:18207325        1.23e+09   33.8 m        1.0 s     46.1%        73.3 m    39.5 m 
+INFO  01:25:49,861 ProgressMeter -  Chr11:36328045        1.25e+09   34.3 m        1.0 s     46.8%        73.3 m    39.0 m 
+INFO  01:26:19,862 ProgressMeter -  Chr11:54535253        1.27e+09   34.8 m        1.0 s     47.5%        73.3 m    38.5 m 
+INFO  01:26:59,862 ProgressMeter -  Chr11:78431809        1.29e+09   35.5 m        1.0 s     48.4%        73.3 m    37.8 m 
+INFO  01:27:29,863 ProgressMeter -  Chr11:96644233        1.31e+09   36.0 m        1.0 s     49.1%        73.3 m    37.3 m 
+INFO  01:27:59,864 ProgressMeter -   Chr12:7722165        1.33e+09   36.5 m        1.0 s     49.8%        73.3 m    36.8 m 
+INFO  01:28:39,864 ProgressMeter -  Chr12:32175993        1.35e+09   37.2 m        1.0 s     50.7%        73.3 m    36.2 m 
+INFO  01:29:09,865 ProgressMeter -  Chr12:50419769        1.37e+09   37.7 m        1.0 s     51.4%        73.3 m    35.7 m 
+INFO  01:29:39,866 ProgressMeter -  Chr12:68952573        1.39e+09   38.2 m        1.0 s     52.1%        73.3 m    35.1 m 
+INFO  01:30:19,867 ProgressMeter -   Chr13:2782713        1.42e+09   38.8 m        1.0 s     53.0%        73.3 m    34.4 m 
+INFO  01:30:49,867 ProgressMeter -  Chr13:21143861        1.43e+09   39.3 m        1.0 s     53.7%        73.3 m    33.9 m 
+INFO  01:31:19,868 ProgressMeter -  Chr13:39501541        1.45e+09   39.8 m        1.0 s     54.4%        73.3 m    33.4 m 
+INFO  01:31:59,869 ProgressMeter -  Chr13:64327385        1.48e+09   40.5 m        1.0 s     55.3%        73.2 m    32.7 m 
+INFO  01:32:29,869 ProgressMeter -  Chr13:82460589        1.50e+09   41.0 m        1.0 s     56.0%        73.2 m    32.2 m 
+INFO  01:32:59,870 ProgressMeter -  Chr14:16906605        1.51e+09   41.5 m        1.0 s     56.7%        73.2 m    31.7 m 
+INFO  01:33:39,871 ProgressMeter -  Chr14:41062105        1.54e+09   42.2 m        1.0 s     57.6%        73.2 m    31.1 m 
+INFO  01:34:09,871 ProgressMeter -  Chr14:59152273        1.56e+09   42.7 m        1.0 s     58.3%        73.2 m    30.6 m 
+INFO  01:34:39,872 ProgressMeter -  Chr14:77342281        1.57e+09   43.2 m        1.0 s     58.9%        73.2 m    30.1 m 
+INFO  01:35:19,873 ProgressMeter -  Chr15:17434777        1.60e+09   43.8 m        1.0 s     59.9%        73.2 m    29.4 m 
+INFO  01:35:49,873 ProgressMeter -  Chr15:35254885        1.62e+09   44.3 m        1.0 s     60.5%        73.2 m    28.9 m 
+INFO  01:36:19,874 ProgressMeter -  Chr15:53170181        1.63e+09   44.8 m        1.0 s     61.2%        73.2 m    28.4 m 
+INFO  01:36:59,874 ProgressMeter -  Chr15:77217709        1.66e+09   45.5 m        1.0 s     62.1%        73.3 m    27.8 m 
+INFO  01:37:29,875 ProgressMeter -  Chr16:10816541        1.68e+09   46.0 m        1.0 s     62.8%        73.2 m    27.2 m 
+INFO  01:37:59,876 ProgressMeter -  Chr16:29140185        1.70e+09   46.5 m        1.0 s     63.5%        73.2 m    26.7 m 
+INFO  01:38:39,877 ProgressMeter -  Chr16:53765105        1.72e+09   47.2 m        1.0 s     64.4%        73.2 m    26.0 m 
+INFO  01:39:19,877 ProgressMeter -  Chr16:77965869        1.74e+09   47.8 m        1.0 s     65.3%        73.2 m    25.4 m 
+INFO  01:39:49,878 ProgressMeter -  Chr17:14339501        1.76e+09   48.3 m        1.0 s     66.0%        73.2 m    24.9 m 
+INFO  01:40:29,879 ProgressMeter -  Chr17:38722541        1.79e+09   49.0 m        1.0 s     66.9%        73.2 m    24.2 m 
+INFO  01:41:09,879 ProgressMeter -  Chr17:63161133        1.81e+09   49.7 m        1.0 s     67.8%        73.2 m    23.6 m 
+INFO  01:41:39,880 ProgressMeter -   Chr18:6286473        1.83e+09   50.2 m        1.0 s     68.5%        73.2 m    23.1 m 
+INFO  01:42:09,881 ProgressMeter -  Chr18:24390993        1.85e+09   50.7 m        1.0 s     69.2%        73.2 m    22.6 m 
+INFO  01:42:39,882 ProgressMeter -  Chr18:42065541        1.87e+09   51.2 m        1.0 s     69.9%        73.2 m    22.1 m 
+INFO  01:43:09,883 ProgressMeter -  Chr18:60457977        1.88e+09   51.7 m        1.0 s     70.5%        73.2 m    21.6 m 
+INFO  01:43:49,884 ProgressMeter -  Chr19:18717925        1.91e+09   52.3 m        1.0 s     71.5%        73.2 m    20.9 m 
+INFO  01:44:19,884 ProgressMeter -  Chr19:36718161        1.93e+09   52.8 m        1.0 s     72.1%        73.2 m    20.4 m 
+INFO  01:44:49,885 ProgressMeter -  Chr19:54738945        1.94e+09   53.3 m        1.0 s     72.8%        73.3 m    19.9 m 
+INFO  01:45:29,886 ProgressMeter -  Chr20:15014145        1.97e+09   54.0 m        1.0 s     73.7%        73.3 m    19.3 m 
+INFO  01:45:59,886 ProgressMeter -  Chr20:32839937        1.99e+09   54.5 m        1.0 s     74.4%        73.3 m    18.8 m 
+INFO  01:46:29,887 ProgressMeter -  Chr20:51198917        2.01e+09   55.0 m        1.0 s     75.1%        73.3 m    18.3 m 
+INFO  01:47:09,887 ProgressMeter -   Chr21:4349261        2.03e+09   55.7 m        1.0 s     76.0%        73.2 m    17.6 m 
+INFO  01:47:39,888 ProgressMeter -  Chr21:22719325        2.05e+09   56.2 m        1.0 s     76.7%        73.2 m    17.1 m 
+INFO  01:48:09,889 ProgressMeter -  Chr21:41097137        2.07e+09   56.7 m        1.0 s     77.4%        73.2 m    16.6 m 
+INFO  01:48:49,889 ProgressMeter -  Chr21:65086449        2.09e+09   57.3 m        1.0 s     78.3%        73.2 m    15.9 m 
+INFO  01:49:19,890 ProgressMeter -  Chr22:11743645        2.11e+09   57.8 m        1.0 s     79.0%        73.2 m    15.4 m 
+INFO  01:49:49,891 ProgressMeter -  Chr22:29994617        2.13e+09   58.3 m        1.0 s     79.7%        73.2 m    14.9 m 
+INFO  01:50:29,891 ProgressMeter -  Chr22:53623649        2.15e+09   59.0 m        1.0 s     80.5%        73.3 m    14.3 m 
+INFO  01:50:59,892 ProgressMeter -  Chr23:10593945        2.17e+09   59.5 m        1.0 s     81.2%        73.3 m    13.8 m 
+INFO  01:51:29,893 ProgressMeter -  Chr23:28467225        2.19e+09   60.0 m        1.0 s     81.9%        73.3 m    13.3 m 
+INFO  01:52:09,893 ProgressMeter -    Chr24:452469        2.21e+09   60.7 m        1.0 s     82.8%        73.3 m    12.6 m 
+INFO  01:52:39,894 ProgressMeter -  Chr24:18411733        2.23e+09   61.2 m        1.0 s     83.5%        73.3 m    12.1 m 
+INFO  01:53:09,895 ProgressMeter -  Chr24:36057629        2.25e+09   61.7 m        1.0 s     84.1%        73.3 m    11.6 m 
+INFO  01:53:49,895 ProgressMeter -  Chr24:60302221        2.27e+09   62.3 m        1.0 s     85.1%        73.3 m    11.0 m 
+INFO  01:54:19,896 ProgressMeter -  Chr25:15865813        2.29e+09   62.8 m        1.0 s     85.7%        73.3 m    10.5 m 
+INFO  01:54:49,897 ProgressMeter -  Chr25:33954949        2.31e+09   63.3 m        1.0 s     86.4%        73.3 m    10.0 m 
+INFO  01:55:29,897 ProgressMeter -  Chr26:15891797        2.33e+09   64.0 m        1.0 s     87.3%        73.3 m     9.3 m 
+INFO  01:55:59,898 ProgressMeter -  Chr26:33894177        2.35e+09   64.5 m        1.0 s     88.0%        73.3 m     8.8 m 
+INFO  01:56:29,899 ProgressMeter -    Chr27:356281        2.37e+09   65.0 m        1.0 s     88.7%        73.3 m     8.3 m 
+INFO  01:57:09,900 ProgressMeter -  Chr27:24570117        2.39e+09   65.7 m        1.0 s     89.6%        73.3 m     7.6 m 
+INFO  01:57:39,900 ProgressMeter -  Chr27:42351157        2.41e+09   66.2 m        1.0 s     90.3%        73.3 m     7.1 m 
+INFO  01:58:09,901 ProgressMeter -  Chr28:15588585        2.43e+09   66.7 m        1.0 s     91.0%        73.3 m     6.6 m 
+INFO  01:58:49,902 ProgressMeter -  Chr28:39663445        2.45e+09   67.3 m        1.0 s     91.9%        73.3 m     6.0 m 
+INFO  01:59:19,902 ProgressMeter -  Chr29:11718461        2.47e+09   67.8 m        1.0 s     92.6%        73.3 m     5.5 m 
+INFO  01:59:49,903 ProgressMeter -  Chr29:30189529        2.49e+09   68.3 m        1.0 s     93.2%        73.3 m     4.9 m 
+INFO  02:00:29,904 ProgressMeter - 7180001786371:30585        2.51e+09   69.0 m        1.0 s     94.1%        73.3 m     4.3 m 
+INFO  02:00:59,905 ProgressMeter -    ChrX:9764781        2.53e+09   69.5 m        1.0 s     94.8%        73.3 m     3.8 m 
+INFO  02:01:29,906 ProgressMeter -   ChrX:27295945        2.55e+09   70.0 m        1.0 s     95.4%        73.4 m     3.4 m 
+INFO  02:01:59,907 ProgressMeter -   ChrX:45783497        2.57e+09   70.5 m        1.0 s     96.1%        73.3 m     2.8 m 
+INFO  02:02:29,908 ProgressMeter -   ChrX:63868133        2.59e+09   71.0 m        1.0 s     96.8%        73.4 m     2.4 m 
+INFO  02:02:59,909 ProgressMeter -   ChrX:82340901        2.60e+09   71.5 m        1.0 s     97.5%        73.3 m   110.0 s 
+INFO  02:03:29,910 ProgressMeter -  ChrX:100376685        2.62e+09   72.0 m        1.0 s     98.2%        73.3 m    80.0 s 
+INFO  02:04:09,911 ProgressMeter -  ChrX:124155301        2.65e+09   72.7 m        1.0 s     99.1%        73.4 m    41.0 s 
+INFO  02:04:49,911 ProgressMeter -  ChrX:148514877        2.67e+09   73.3 m        1.0 s    100.0%        73.4 m     1.0 s 
+INFO  02:05:19,912 ProgressMeter - ChrY_7180001999283:701        2.67e+09   73.8 m        1.0 s    100.0%        73.8 m     0.0 s 
+INFO  02:05:49,913 ProgressMeter - ChrY_7180001999283:701        2.67e+09   74.3 m        1.0 s    100.0%        74.3 m     0.0 s 
+INFO  02:06:29,913 ProgressMeter - ChrY_7180001999283:701        2.67e+09   75.0 m        1.0 s    100.0%        75.0 m     0.0 s 
+INFO  02:06:34,279 ProgressMeter -            done        2.67e+09   75.1 m        1.0 s    100.0%        75.1 m     0.0 s 
+INFO  02:06:34,279 ProgressMeter - Total runtime 4504.47 secs, 75.07 min, 1.25 hours 
+INFO  02:06:34,279 MicroScheduler - 1077329 reads were filtered out during the traversal out of approximately 8057953 total reads (13.37%) 
+INFO  02:06:34,280 MicroScheduler -   -> 1077329 reads (13.37% of total) failing BadMateFilter 
+INFO  02:06:34,280 MicroScheduler -   -> 0 reads (0.00% of total) failing DuplicateReadFilter 
+INFO  02:06:34,280 MicroScheduler -   -> 0 reads (0.00% of total) failing FailsVendorQualityCheckFilter 
+INFO  02:06:34,280 MicroScheduler -   -> 0 reads (0.00% of total) failing MalformedReadFilter 
+INFO  02:06:34,280 MicroScheduler -   -> 0 reads (0.00% of total) failing MappingQualityUnavailableFilter 
+INFO  02:06:34,280 MicroScheduler -   -> 0 reads (0.00% of total) failing NotPrimaryAlignmentFilter 
+INFO  02:06:34,281 MicroScheduler -   -> 0 reads (0.00% of total) failing UnmappedReadFilter 
+INFO  02:06:35,272 GATKRunReport - Uploaded run statistics report to AWS S3 
+Thu Feb  5 02:06:35 CST 2015
